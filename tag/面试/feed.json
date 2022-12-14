@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "潇十七 • All posts by \"面试\" tag",
+    "description": "可生活不是电影，我也少了点运气",
+    "home_page_url": "https://x-17.top",
+    "items": [
+        {
+            "id": "https://x-17.top/2022/09/16/%E6%B1%82%E8%81%8C/%E6%B7%B1%E4%BF%A1%E6%9C%8D%E4%B8%80%E9%9D%A2/",
+            "url": "https://x-17.top/2022/09/16/%E6%B1%82%E8%81%8C/%E6%B7%B1%E4%BF%A1%E6%9C%8D%E4%B8%80%E9%9D%A2/",
+            "title": "深信服一面二面",
+            "date_published": "2022-09-16T13:06:49.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\assets\\js\\Meting.min.js\"></script><p>时间：2022/9/16 19:55~20:55 自我介绍 编程题：二维矩阵最长下降路径 dfs + 剪枝，折磨，但面试官疯狂引导 反问   2022/9/19 20:10~20:40 自我介绍 int a [5] sizeof (a) sizeof (a [0]) sizeof (&amp;a) sizeof (&amp;a [0]) 链表倒数第 k 个节点 深拷贝 浅拷贝 析构函数能不能重载 项目 反问</p>\n",
+            "tags": [
+                "面试"
+            ]
+        },
+        {
+            "id": "https://x-17.top/2022/09/08/%E6%B1%82%E8%81%8C/%E6%B6%A6%E7%A7%91%E9%80%9A%E7%94%A8%E9%9D%A2%E8%AF%95/",
+            "url": "https://x-17.top/2022/09/08/%E6%B1%82%E8%81%8C/%E6%B6%A6%E7%A7%91%E9%80%9A%E7%94%A8%E9%9D%A2%E8%AF%95/",
+            "title": "润科通用面试",
+            "date_published": "2022-09-08T10:11:16.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\assets\\js\\Meting.min.js\"></script><p>时间 2022/9/8 17:00 面试官没来，18:00 电话面，12 分钟，智能指针是什么（不会），进程间通信（说了 mpi）。 Qt，UE4</p>\n",
+            "tags": [
+                "面试"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>潇十七 • Posts by &#34;面试&#34; tag</title>
+        <link>https://x-17.top</link>
+        <description>可生活不是电影，我也少了点运气</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 16 Sep 2022 21:06:49 +0800</pubDate>
+        <lastBuildDate>Fri, 16 Sep 2022 21:06:49 +0800</lastBuildDate>
+        <category>MIT 6.1810</category>
+        <category>操作系统</category>
+        <category>每日一题</category>
+        <category>Hard</category>
+        <category>docker</category>
+        <category>Medium</category>
+        <category>Easy</category>
+        <category>leetcode每日一题</category>
+        <category>Madium</category>
+        <category>easy</category>
+        <category>leetcode周赛</category>
+        <category>设计模式</category>
+        <category>C++</category>
+        <category>工具</category>
+        <category>C++ Primer</category>
+        <category>wiki</category>
+        <category>教程</category>
+        <category>Hexo</category>
+        <category>Butterfly</category>
+        <category>笔试</category>
+        <category>秋招</category>
+        <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/09/16/%E6%B1%82%E8%81%8C/%E6%B7%B1%E4%BF%A1%E6%9C%8D%E4%B8%80%E9%9D%A2/</guid>
+            <title>深信服一面二面</title>
+            <link>https://x-17.top/2022/09/16/%E6%B1%82%E8%81%8C/%E6%B7%B1%E4%BF%A1%E6%9C%8D%E4%B8%80%E9%9D%A2/</link>
+            <category>面试</category>
+            <pubDate>Fri, 16 Sep 2022 21:06:49 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;时间：2022/9/16 19:55~20:55 自我介绍 编程题：二维矩阵最长下降路径 dfs + 剪枝，折磨，但面试官疯狂引导 反问   2022/9/19 20:10~20:40 自我介绍 int a [5] sizeof (a) sizeof (a [0]) sizeof (&amp;amp;a) sizeof (&amp;amp;a [0]) 链表倒数第 k 个节点 深拷贝 浅拷贝 析构函数能不能重载 项目 反问&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/09/08/%E6%B1%82%E8%81%8C/%E6%B6%A6%E7%A7%91%E9%80%9A%E7%94%A8%E9%9D%A2%E8%AF%95/</guid>
+            <title>润科通用面试</title>
+            <link>https://x-17.top/2022/09/08/%E6%B1%82%E8%81%8C/%E6%B6%A6%E7%A7%91%E9%80%9A%E7%94%A8%E9%9D%A2%E8%AF%95/</link>
+            <category>面试</category>
+            <pubDate>Thu, 08 Sep 2022 18:11:16 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;p&gt;时间 2022/9/8 17:00 面试官没来，18:00 电话面，12 分钟，智能指针是什么（不会），进程间通信（说了 mpi）。 Qt，UE4&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
