@@ -9,24 +9,24 @@
         <lastBuildDate>Thu, 15 Dec 2022 16:11:25 +0800</lastBuildDate>
         <category>每日一题</category>
         <category>Easy</category>
-        <category>Hard</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
+        <category>Hard</category>
         <category>docker</category>
-        <category>Medium</category>
         <category>leetcode每日一题</category>
+        <category>Medium</category>
         <category>Madium</category>
         <category>easy</category>
         <category>leetcode周赛</category>
-        <category>C++</category>
         <category>设计模式</category>
+        <category>C++</category>
         <category>工具</category>
         <category>C++ Primer</category>
+        <category>wiki</category>
+        <category>秋招</category>
         <category>教程</category>
         <category>Hexo</category>
         <category>Butterfly</category>
-        <category>wiki</category>
-        <category>秋招</category>
         <category>笔试</category>
         <category>面试</category>
         <item>
@@ -2789,8 +2789,8 @@ dp[i][1] = min\{dp[i-1][1],dp[i-1][0]\} + 1
             <guid isPermalink="true">https://x-17.top/2022/10/08/LeetCode/870-%E4%BC%98%E5%8A%BF%E6%B4%97%E7%89%8C/</guid>
             <title>870. 优势洗牌</title>
             <link>https://x-17.top/2022/10/08/LeetCode/870-%E4%BC%98%E5%8A%BF%E6%B4%97%E7%89%8C/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Sat, 08 Oct 2022 15:32:59 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;870-优势洗牌&#34;&gt;&lt;a href=&#34;#870-优势洗牌&#34; class=&#34;headerlink&#34; title=&#34;870. 优势洗牌&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://leetcode.cn/problems/advantage-shuffle/&#34;&gt;870. 优势洗牌&lt;/a&gt;&lt;/h1&gt;&lt;p&gt;给定两个大小相等的数组 nums1 和 nums2，nums1 相对于 nums2 的优势可以用满足 nums1[i] &amp;gt; nums2[i] 的索引 i 的数目来描述。&lt;/p&gt;
 &lt;p&gt;返回 nums1 的任意排列，使其相对于 nums2 的优势最大化。&lt;/p&gt;
@@ -4052,8 +4052,8 @@ dp[i][1] = min\{dp[i-1][1],dp[i-1][0]\} + 1
             <guid isPermalink="true">https://x-17.top/2022/10/05/LeetCode/811-%E5%AD%90%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE%E8%AE%A1%E6%95%B0/</guid>
             <title>811. 子域名访问计数</title>
             <link>https://x-17.top/2022/10/05/LeetCode/811-%E5%AD%90%E5%9F%9F%E5%90%8D%E8%AE%BF%E9%97%AE%E8%AE%A1%E6%95%B0/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Wed, 05 Oct 2022 07:48:49 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;811-子域名访问计数&#34;&gt;&lt;a href=&#34;#811-子域名访问计数&#34; class=&#34;headerlink&#34; title=&#34;811. 子域名访问计数&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://leetcode.cn/problems/subdomain-visit-count/&#34;&gt;811. 子域名访问计数&lt;/a&gt;&lt;/h1&gt;&lt;blockquote&gt;
 &lt;p&gt;网站域名 “discuss.leetcode.com” 由多个子域名组成。顶级域名为 “com” ，二级域名为 “leetcode.com” ，最低一级为 “discuss.leetcode.com” 。当访问域名 “discuss.leetcode.com” 时，同时也会隐式访问其父域名 “leetcode.com” 以及 “com” 。&lt;/p&gt;
@@ -5030,8 +5030,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/10/02/LeetCode/777-%E5%9C%A8lr%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E4%BA%A4%E6%8D%A2%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6/</guid>
             <title>777. 在LR字符串中交换相邻字符</title>
             <link>https://x-17.top/2022/10/02/LeetCode/777-%E5%9C%A8lr%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%AD%E4%BA%A4%E6%8D%A2%E7%9B%B8%E9%82%BB%E5%AD%97%E7%AC%A6/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Sun, 02 Oct 2022 07:42:54 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/swap-adjacent-in-lr-string/&#34;&gt;https://leetcode.cn/problems/swap-adjacent-in-lr-string/&lt;/a&gt; 在一个由 ‘L’ , ‘R’ 和 ‘X’ 三个字符组成的字符串（例如”RXXLRXRXL”）中进行移动操作。一次移动操作指用一个”LX”替换一个”XL”，或者用一个”XR”替换一个”RX”。现给定起始字符串start和结束字符串end，请编写代码，当且仅当存在一系列移动操作使得start可以转换成end时， 返回True。 示例 :&lt;/p&gt;
@@ -5096,8 +5096,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/30/LeetCode/%E9%9D%A2%E8%AF%95%E9%A2%98-01-08-%E9%9B%B6%E7%9F%A9%E9%98%B5/</guid>
             <title>面试题 01.08. 零矩阵</title>
             <link>https://x-17.top/2022/09/30/LeetCode/%E9%9D%A2%E8%AF%95%E9%A2%98-01-08-%E9%9B%B6%E7%9F%A9%E9%98%B5/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Fri, 30 Sep 2022 07:41:21 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/zero-matrix-lcci/&#34;&gt;https://leetcode.cn/problems/zero-matrix-lcci/&lt;/a&gt; 编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。 示例 1：&lt;/p&gt;
@@ -5155,8 +5155,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/28/LeetCode/%E9%9D%A2%E8%AF%95%E9%A2%98-17-09-%E7%AC%AC-k-%E4%B8%AA%E6%95%B0/</guid>
             <title>面试题 17.09. 第 k 个数</title>
             <link>https://x-17.top/2022/09/28/LeetCode/%E9%9D%A2%E8%AF%95%E9%A2%98-17-09-%E7%AC%AC-k-%E4%B8%AA%E6%95%B0/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Wed, 28 Sep 2022 07:37:35 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/get-kth-magic-number-lcci/&#34;&gt;https://leetcode.cn/problems/get-kth-magic-number-lcci/&lt;/a&gt; 有些数的素因子只有 3，5，7，请设计一个算法找出第 k 个数。注意，不是必须有这些素因子，而是必须不包含其他的素因子。例如，前几个数按顺序应该是 1，3，5，7，9，15，21。 示例 1:&lt;/p&gt;
@@ -5253,8 +5253,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/25/LeetCode/788-%E6%97%8B%E8%BD%AC%E6%95%B0%E5%AD%97/</guid>
             <title>788. 旋转数字</title>
             <link>https://x-17.top/2022/09/25/LeetCode/788-%E6%97%8B%E8%BD%AC%E6%95%B0%E5%AD%97/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Sun, 25 Sep 2022 07:47:22 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/rotated-digits/&#34;&gt;https://leetcode.cn/problems/rotated-digits/&lt;/a&gt; 我们称一个数 X 为好数, 如果它的每位数字逐个地被旋转 180 度后，我们仍可以得到一个有效的，且和 X 不同的数。要求每位数字都要被旋转。 如果一个数的每位数字被旋转以后仍然还是一个数字， 则这个数是有效的。0, 1, 和 8 被旋转后仍然是它们自己；2 和 5 可以互相旋转成对方（在这种情况下，它们以不同的方向旋转，换句话说，2 和 5 互为镜像）；6 和 9 同理，除了这些以外其他的数字旋转以后都不再是有效的数字。 现在我们有一个正整数 N, 计算从 1 到 N 中有多少个数 X 是好数？ 示例：&lt;/p&gt;
@@ -5324,8 +5324,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/23/LeetCode/707-%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8/</guid>
             <title>707. 设计链表</title>
             <link>https://x-17.top/2022/09/23/LeetCode/707-%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Fri, 23 Sep 2022 08:17:08 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/design-linked-list/&#34;&gt;https://leetcode.cn/problems/design-linked-list/&lt;/a&gt; 设计链表的实现。您可以选择使用单链表或双链表。单链表中的节点应该具有两个属性：val 和 next。val 是当前节点的值，next 是指向下一个节点的指针/引用。如果要使用双向链表，则还需要一个属性 prev 以指示链表中的上一个节点。假设链表中的所有节点都是 0-index 的。 在链表类中实现这些功能： get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。 addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。 addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。 addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val  的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。 deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。 示例：&lt;/p&gt;
@@ -5397,8 +5397,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/20/LeetCode/698-%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86/</guid>
             <title>698. 划分为k个相等的子集</title>
             <link>https://x-17.top/2022/09/20/LeetCode/698-%E5%88%92%E5%88%86%E4%B8%BAk%E4%B8%AA%E7%9B%B8%E7%AD%89%E7%9A%84%E5%AD%90%E9%9B%86/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Tue, 20 Sep 2022 08:20:31 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/&#34;&gt;https://leetcode.cn/problems/partition-to-k-equal-sum-subsets/&lt;/a&gt; 给定一个整数数组  nums 和一个正整数 k，找出是否有可能把这个数组分成 k 个非空子集，其总和都相等。 示例 1：&lt;/p&gt;
@@ -5558,8 +5558,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/15/LeetCode/672-%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3-%E2%85%B1/</guid>
             <title>672. 灯泡开关 Ⅱ</title>
             <link>https://x-17.top/2022/09/15/LeetCode/672-%E7%81%AF%E6%B3%A1%E5%BC%80%E5%85%B3-%E2%85%B1/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Thu, 15 Sep 2022 20:55:47 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/bulb-switcher-ii/&#34;&gt;https://leetcode.cn/problems/bulb-switcher-ii/&lt;/a&gt; 房间中有 n 只已经打开的灯泡，编号从 1 到 n 。墙上挂着 4 个开关 。 这 4 个开关各自都具有不同的功能，其中： 开关 1 ：反转当前所有灯的状态（即开变为关，关变为开） 开关 2 ：反转编号为偶数的灯的状态（即 2, 4, …） 开关 3 ：反转编号为奇数的灯的状态（即 1, 3, …） 开关 4 ：反转编号为 j = 3k + 1 的灯的状态，其中 k = 0, 1, 2, …（即 1, 4, 7, 10, …） 你必须 恰好 按压开关 presses 次。每次按压，你都需要从 4 个开关中选出一个来执行按压操作。 给你两个整数 n 和 presses ，执行完所有按压之后，返回 不同可能状态 的数量。 示例 1：&lt;/p&gt;
@@ -5627,8 +5627,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/13/LeetCode/670-%E6%9C%80%E5%A4%A7%E4%BA%A4%E6%8D%A2/</guid>
             <title>670. 最大交换</title>
             <link>https://x-17.top/2022/09/13/LeetCode/670-%E6%9C%80%E5%A4%A7%E4%BA%A4%E6%8D%A2/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Tue, 13 Sep 2022 13:28:29 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/maximum-swap/&#34;&gt;https://leetcode.cn/problems/maximum-swap/&lt;/a&gt;给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。 示例 1 :&lt;/p&gt;
@@ -5711,8 +5711,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/10/LeetCode/669-%E4%BF%AE%E5%89%AA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</guid>
             <title>669. 修剪二叉搜索树</title>
             <link>https://x-17.top/2022/09/10/LeetCode/669-%E4%BF%AE%E5%89%AA%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Sat, 10 Sep 2022 18:58:44 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/trim-a-binary-search-tree/&#34;&gt;https://leetcode.cn/problems/trim-a-binary-search-tree/&lt;/a&gt; 给你二叉搜索树的根节点 root ，同时给定最小边界low 和最大边界 high。通过修剪二叉搜索树，使得所有节点的值在[low, high]中。修剪树 不应该 改变保留在树中的元素的相对结构 (即，如果没有被移除，原有的父代子代关系都应当保留)。 可以证明，存在 唯一的答案 。 所以结果应当返回修剪好的二叉搜索树的新的根节点。注意，根节点可能会根据给定的边界发生改变。 示例 1： &lt;img src=&#34;https://assets.leetcode.com/uploads/2020/09/09/trim1.jpg&#34; alt=&#34;&#34;&gt; 输入：root = [1,0,2], low = 1, high = 2 输出：[1,null,2] 示例 2： &lt;img src=&#34;https://assets.leetcode.com/uploads/2020/09/09/trim2.jpg&#34; alt=&#34;&#34;&gt; 输入：root = [3,0,4,null,2,null,null,1], low = 1, high = 3 输出：[3,2,null,1] 提示：&lt;/p&gt;
@@ -5777,8 +5777,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/08/LeetCode/667-%E4%BC%98%E7%BE%8E%E7%9A%84%E6%8E%92%E5%88%97-ii/</guid>
             <title>667. 优美的排列 II</title>
             <link>https://x-17.top/2022/09/08/LeetCode/667-%E4%BC%98%E7%BE%8E%E7%9A%84%E6%8E%92%E5%88%97-ii/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Thu, 08 Sep 2022 16:32:21 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/beautiful-arrangement-ii/&#34;&gt;https://leetcode.cn/problems/beautiful-arrangement-ii/&lt;/a&gt; 给你两个整数 n 和 k ，请你构造一个答案列表 answer ，该列表应当包含从 1 到 n 的 n 个不同正整数，并同时满足下述条件： 假设该列表是 answer = [a1, a2, a3, … , an] ，那么列表 [a1 - a2, a2 - a3, a3 - a4, … , an-1 - an] 中应该有且仅有 k 个不同整数。 返回列表 answer 。如果存在多种答案，只需返回其中 任意一种 。 示例 1：&lt;/p&gt;
@@ -5986,8 +5986,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/09/02/LeetCode/687-%E6%9C%80%E9%95%BF%E5%90%8C%E5%80%BC%E8%B7%AF%E5%BE%84/</guid>
             <title>687. 最长同值路径</title>
             <link>https://x-17.top/2022/09/02/LeetCode/687-%E6%9C%80%E9%95%BF%E5%90%8C%E5%80%BC%E8%B7%AF%E5%BE%84/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Fri, 02 Sep 2022 19:08:40 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/longest-univalue-path/&#34;&gt;https://leetcode.cn/problems/longest-univalue-path/&lt;/a&gt; 给定一个二叉树的 root ，返回 最长的路径的长度 ，这个路径中的 每个节点具有相同值 。 这条路径可以经过也可以不经过根节点。 两个节点之间的路径长度 由它们之间的边数表示。 示例 1: &lt;img src=&#34;https://assets.leetcode.com/uploads/2020/10/13/ex1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -6065,8 +6065,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/08/31/LeetCode/946-%E9%AA%8C%E8%AF%81%E6%A0%88%E5%BA%8F%E5%88%97/</guid>
             <title>946. 验证栈序列</title>
             <link>https://x-17.top/2022/08/31/LeetCode/946-%E9%AA%8C%E8%AF%81%E6%A0%88%E5%BA%8F%E5%88%97/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Wed, 31 Aug 2022 12:53:01 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/validate-stack-sequences/&#34;&gt;https://leetcode.cn/problems/validate-stack-sequences/&lt;/a&gt; 给定 pushed 和 popped 两个序列，每个序列中的 值都不重复，只有当它们可能是在最初空栈上进行的推入 push 和弹出 pop 操作序列的结果时，返回 true；否则，返回 false 。 示例 1：&lt;/p&gt;
@@ -6095,8 +6095,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/08/30/LeetCode/998-%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91-ii/</guid>
             <title>998. 最大二叉树 II</title>
             <link>https://x-17.top/2022/08/30/LeetCode/998-%E6%9C%80%E5%A4%A7%E4%BA%8C%E5%8F%89%E6%A0%91-ii/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Tue, 30 Aug 2022 10:42:42 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/maximum-binary-tree-ii/&#34;&gt;https://leetcode.cn/problems/maximum-binary-tree-ii/&lt;/a&gt; 最大树 定义：一棵树，并满足：其中每个节点的值都大于其子树中的任何其他值。 给你最大树的根节点 root 和一个整数 val 。 就像 之前的问题 那样，给定的树是利用 Construct(a) 例程从列表 a（root = Construct(a)）递归地构建的： 如果 a 为空，返回 null 。 否则，令 a[i] 作为 a 的最大元素。创建一个值为 a[i] 的根节点 root 。 root 的左子树将被构建为 Construct([a[0], a[1], …, a[i - 1]]) 。 root 的右子树将被构建为 Construct([a[i + 1], a[i + 2], …, a[a.length - 1]]) 。 返回 root 。 请注意，题目没有直接给出 a ，只是给出一个根节点 root = Construct(a) 。 假设 b 是 a 的副本，并在末尾附加值 val。题目数据保证 b 中的值互不相同。 返回 Construct(b) 。 示例 1： &lt;img src=&#34;https://x-17.top/wp-content/uploads/2022/08/maximum-binary-tree-1-1.png&#34; alt=&#34;&#34;&gt;&lt;img src=&#34;https://x-17.top/wp-content/uploads/2022/08/maximum-binary-tree-1-2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -6226,8 +6226,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/08/27/LeetCode/662-%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9C%80%E5%A4%A7%E5%AE%BD%E5%BA%A6/</guid>
             <title>662. 二叉树最大宽度</title>
             <link>https://x-17.top/2022/08/27/LeetCode/662-%E4%BA%8C%E5%8F%89%E6%A0%91%E6%9C%80%E5%A4%A7%E5%AE%BD%E5%BA%A6/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Sat, 27 Aug 2022 12:07:20 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/maximum-width-of-binary-tree/&#34;&gt;https://leetcode.cn/problems/maximum-width-of-binary-tree/&lt;/a&gt; 给你一棵二叉树的根节点 root ，返回树的 最大宽度 。 树的 最大宽度 是所有层中最大的 宽度 。 每一层的 宽度 被定义为该层最左和最右的非空节点（即，两个端点）之间的长度。将这个二叉树视作与满二叉树结构相同，两端点间会出现一些延伸到这一层的 null 节点，这些 null 节点也计入长度。 题目数据保证答案将会在  32 位 带符号整数范围内。 示例 1： &lt;img src=&#34;https://assets.leetcode.com/uploads/2021/05/03/width1-tree.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
@@ -6311,8 +6311,8 @@ hexo会编译source目录下文件，js文件可能会因此异常，找到hexo�
             <guid isPermalink="true">https://x-17.top/2022/08/25/LeetCode/658-%E6%89%BE%E5%88%B0-k-%E4%B8%AA%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E5%85%83%E7%B4%A0/</guid>
             <title>658. 找到 K 个最接近的元素</title>
             <link>https://x-17.top/2022/08/25/LeetCode/658-%E6%89%BE%E5%88%B0-k-%E4%B8%AA%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E5%85%83%E7%B4%A0/</link>
-            <category>Medium</category>
             <category>leetcode每日一题</category>
+            <category>Medium</category>
             <pubDate>Thu, 25 Aug 2022 11:36:02 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://leetcode.cn/problems/find-k-closest-elements/&#34;&gt;https://leetcode.cn/problems/find-k-closest-elements/&lt;/a&gt; 给定一个 排序好 的数组 arr ，两个整数 k 和 x ，从数组中找到最靠近 x（两数之差最小）的 k 个数。返回的结果必须要是按升序排好的。 整数 a 比整数 b 更接近 x 需要满足： a - x &amp;lt; b - x 或者 a - x == b - x 且 a &amp;lt; b 示例 1：&lt;/p&gt;

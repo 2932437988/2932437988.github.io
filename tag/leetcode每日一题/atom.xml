@@ -6,24 +6,24 @@
     <updated>2022-10-08T07:32:59.000Z</updated>
     <category term="每日一题" />
     <category term="Easy" />
-    <category term="Hard" />
     <category term="MIT 6.1810" />
     <category term="操作系统" />
+    <category term="Hard" />
     <category term="docker" />
-    <category term="Medium" />
     <category term="leetcode每日一题" />
+    <category term="Medium" />
     <category term="Madium" />
     <category term="easy" />
     <category term="leetcode周赛" />
-    <category term="C++" />
     <category term="设计模式" />
+    <category term="C++" />
     <category term="工具" />
     <category term="C++ Primer" />
+    <category term="wiki" />
+    <category term="秋招" />
     <category term="教程" />
     <category term="Hexo" />
     <category term="Butterfly" />
-    <category term="wiki" />
-    <category term="秋招" />
     <category term="笔试" />
     <category term="面试" />
     <entry>
@@ -51,8 +51,8 @@
 &lt;li&gt;空间复杂度：&lt;script type=&#34;math/tex&#34;&gt;O(n)&lt;/script&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-08T07:32:59.000Z</updated>
     </entry>
     <entry>
@@ -161,8 +161,8 @@
 &lt;li&gt;空间复杂度：$O(n)$&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-04T23:48:49.000Z</updated>
     </entry>
     <entry>
@@ -212,8 +212,8 @@
 &lt;li&gt;空间复杂度\(O(1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-01T23:42:54.000Z</updated>
     </entry>
     <entry>
@@ -266,8 +266,8 @@
 &lt;li&gt;空间复杂度\(O(m+n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-29T23:41:21.000Z</updated>
     </entry>
     <entry>
@@ -314,8 +314,8 @@
 &lt;li&gt;空间复杂度\(O(logk)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-27T23:37:35.000Z</updated>
     </entry>
     <entry>
@@ -389,8 +389,8 @@
 &lt;li&gt;空间复杂度\(O(1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-24T23:47:22.000Z</updated>
     </entry>
     <entry>
@@ -438,8 +438,8 @@
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;题解&#34;&gt;&lt;a href=&#34;#题解&#34; class=&#34;headerlink&#34; title=&#34;题解&#34;&gt;&lt;/a&gt;题解&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class MyLinkedList &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    struct ListNode&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int val;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode(int val):val(val), next(nullptr), prev(nullptr) &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    int _size;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ListNode* _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ListNode* _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    MyLinkedList() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead = new ListNode(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail = new ListNode(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next = _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev = _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    int get(int index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size - 1  index &amp;lt; 0)&amp;#123; return -1; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return cur-&amp;gt;val;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtHead(int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtTail(int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = _dummyTail-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtIndex(int index, int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size  index &amp;lt; 0)&amp;#123; return ; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = cur-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = cur;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void deleteAtIndex(int index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size - 1  index &amp;lt; 0)&amp;#123; return ; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev-&amp;gt;next = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;next-&amp;gt;prev = cur-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        delete(cur);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * Your MyLinkedList object will be instantiated and called as such:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * MyLinkedList* obj = new MyLinkedList();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * int param_1 = obj-&amp;gt;get(index);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtHead(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtTail(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtIndex(index,val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;deleteAtIndex(index);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; */&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-23T00:17:08.000Z</updated>
     </entry>
     <entry>
@@ -519,8 +519,8 @@
 &lt;li&gt;空间复杂度\(O(2^n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-20T00:20:31.000Z</updated>
     </entry>
     <entry>
@@ -663,8 +663,8 @@
 &lt;li&gt;空间复杂度\(O(1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-15T12:55:47.000Z</updated>
     </entry>
     <entry>
@@ -712,8 +712,8 @@
 &lt;li&gt;空间复杂度\(O(logn)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-13T05:28:29.000Z</updated>
     </entry>
     <entry>
@@ -795,8 +795,8 @@
 &lt;li&gt;空间复杂度\(O(n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-10T10:58:44.000Z</updated>
     </entry>
     <entry>
@@ -853,8 +853,8 @@
 &lt;li&gt;空间复杂度\(O(1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-08T08:32:21.000Z</updated>
     </entry>
     <entry>
@@ -977,8 +977,8 @@
 &lt;li&gt;空间复杂度\(O(n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-02T11:08:40.000Z</updated>
     </entry>
     <entry>
@@ -1036,8 +1036,8 @@
 &lt;li&gt;空间复杂度：\(O(n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-31T04:53:01.000Z</updated>
     </entry>
     <entry>
@@ -1067,8 +1067,8 @@
 &lt;li&gt;空间复杂度：\(O(1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-30T02:42:42.000Z</updated>
     </entry>
     <entry>
@@ -1161,8 +1161,8 @@
 &lt;li&gt;空间复杂度：\(O(n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-27T04:07:20.000Z</updated>
     </entry>
     <entry>
@@ -1221,8 +1221,8 @@
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class Solution &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    vector findClosestElements(vector&amp;lt;int&amp;gt;&amp;amp; arr, int k, int x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sort(arr.begin(), arr.end(), [x](int a, int b) -&amp;gt; bool &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            return abs(a - x) &amp;lt; abs(b - x)  abs(a - x) == abs(b - x) &amp;amp;&amp;amp; a &amp;lt; b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sort(arr.begin(), arr.begin() + k);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return vector(arr.begin(), arr.begin() + k);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;解法二：二分加双指针，依旧是简短的官方代码。&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class Solution &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    vector findClosestElements(vector&amp;lt;int&amp;gt;&amp;amp; arr, int k, int x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int right = lower_bound(arr.begin(), arr.end(), x) - arr.begin();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int left = right - 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while (k--) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            if (left &amp;lt; 0) &amp;#123; right++; &amp;#125; else if (right &amp;gt;= arr.size()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125; else if (x - arr[left] &amp;lt;= arr[right] - x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                right++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return vector(arr.begin() + left + 1, arr.begin() + right);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-25T03:36:02.000Z</updated>
     </entry>
     <entry>
