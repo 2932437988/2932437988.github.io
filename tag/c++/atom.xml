@@ -5,20 +5,20 @@
     <link href="https://x-17.top" />
     <updated>2022-10-15T06:01:59.000Z</updated>
     <category term="每日一题" />
+    <category term="Hard" />
     <category term="Easy" />
     <category term="MIT 6.1810" />
     <category term="操作系统" />
-    <category term="Hard" />
     <category term="docker" />
     <category term="Medium" />
     <category term="leetcode每日一题" />
     <category term="Madium" />
     <category term="easy" />
     <category term="leetcode周赛" />
-    <category term="工具" />
     <category term="设计模式" />
-    <category term="C++ Primer" />
     <category term="C++" />
+    <category term="工具" />
+    <category term="C++ Primer" />
     <category term="wiki" />
     <category term="教程" />
     <category term="Hexo" />
@@ -216,8 +216,8 @@ C++ 程序还会用到的一项预处理功能是头文件保护符（header gua
 &lt;h1 id=&#34;12-读后感&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#12-读后感&#34;&gt;#&lt;/a&gt; 12. 读后感？&lt;/h1&gt;
 &lt;p&gt;第二章的内容相对于第一章读起来已经感到有些拗口了，一些定义的概念也并不是特别清晰，尤其有些定义在百度上解释的五花八门，这种反而感觉英文上对于其定义的解释更为贴切。第二章变量和基本类型可以说是 C++ 编程的基础吧，更复杂的结构等等都是由基础演化而来，我的笔记也并不全面，书上会有更为详尽的示例，但由于时间和精力最优的选择就是只做这种纯文字且没什么排版的文章记录，我也更容易坚持下来，如果你想有更深的了解，还是建议去读一读这本书，当然也可以对照我的记录，我对其中部分难以理解的定义给出了自己的理解或是用自己的话语描述，如有错误，欢迎指正。&lt;/p&gt;
 </content>
-        <category term="C++ Primer" />
         <category term="C++" />
+        <category term="C++ Primer" />
         <updated>2022-10-15T06:01:59.000Z</updated>
     </entry>
     <entry>
@@ -818,8 +818,8 @@ void * 指针是一种特殊的指针类型，可用于存放任意对象的地�
 &lt;p&gt;今天的内容大概就到这里了，第二章还有一小部分内容，本章指针和引用深入可探讨的内容还是很多的，之后每天更得内容可能会少一点，会同步推一下项目以及 mit 6.1810 的。如有错误欢迎指正，如有疑问欢迎留言评论，我会尽快回复。&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="C++ Primer" />
         <category term="C++" />
+        <category term="C++ Primer" />
         <updated>2022-10-14T00:55:33.000Z</updated>
     </entry>
     <entry>
@@ -991,8 +991,8 @@ C++ 最初的一个设计焦点就是能定义使用上像内置类型一样自�
 &lt;/ul&gt;
 &lt;p&gt;上面就是第一章全部内容了，后续可能读第二遍会添加新内容。&lt;/p&gt;
 </content>
-        <category term="C++ Primer" />
         <category term="C++" />
+        <category term="C++ Primer" />
         <updated>2022-10-13T07:53:32.000Z</updated>
     </entry>
     <entry>
