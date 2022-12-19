@@ -5,22 +5,22 @@
         <link>https://x-17.top</link>
         <description>可生活不是电影，我也少了点运气</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 15 Dec 2022 16:11:25 +0800</pubDate>
-        <lastBuildDate>Thu, 15 Dec 2022 16:11:25 +0800</lastBuildDate>
+        <pubDate>Mon, 19 Dec 2022 18:31:38 +0800</pubDate>
+        <lastBuildDate>Mon, 19 Dec 2022 18:31:38 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Hard</category>
+        <category>Easy</category>
         <category>docker</category>
+        <category>Hard</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
-        <category>Medium</category>
-        <category>Easy</category>
         <category>leetcode每日一题</category>
+        <category>Medium</category>
         <category>Madium</category>
         <category>easy</category>
         <category>leetcode周赛</category>
         <category>设计模式</category>
-        <category>C++</category>
         <category>工具</category>
+        <category>C++</category>
         <category>C++ Primer</category>
         <category>wiki</category>
         <category>教程</category>
@@ -29,6 +29,23 @@
         <category>秋招</category>
         <category>笔试</category>
         <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/12/19/1971-%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84/</guid>
+            <title>1971. 寻找图中是否存在路径</title>
+            <link>https://x-17.top/2022/12/19/1971-%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84/</link>
+            <category>每日一题</category>
+            <category>Easy</category>
+            <pubDate>Mon, 19 Dec 2022 18:31:38 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1971-寻找图中是否存在路径&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1971-寻找图中是否存在路径&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/find-if-path-exists-in-graph/description/&#34;&gt;1971. 寻找图中是否存在路径&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;题解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#题解&#34;&gt;#&lt;/a&gt; 题解&lt;/h2&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; source, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; destination, vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt; &amp;amp;adj, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt;&amp;gt; &amp;amp;visited)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (source == destination) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        visited[source] = &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; next : adj[source]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!visited[next] &amp;amp;&amp;amp; &lt;span class=&#34;built_in&#34;&gt;dfs&lt;/span&gt;(next, destination, adj, visited)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;validPath&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n, vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt;&amp;amp; edges, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; source, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; destination)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class=&#34;built_in&#34;&gt;adj&lt;/span&gt;(n);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;auto&lt;/span&gt; &amp;amp;edge : edges) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x = edge[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;], y = edge[&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            adj[x].&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(y);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            adj[y].&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(x);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;function&#34;&gt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(n, &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;dfs&lt;/span&gt;(source, destination, adj, visited);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;复杂度分析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度：$O (m+n)$&lt;/li&gt;
+&lt;li&gt;空间复杂度：$O (m+n)$&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://x-17.top/2022/12/15/LeetCode/1945-%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E5%8C%96%E5%90%8E%E7%9A%84%E5%90%84%E4%BD%8D%E6%95%B0%E5%AD%97%E4%B9%8B%E5%92%8C/</guid>
             <title>1945. 字符串转化后的各位数字之和</title>

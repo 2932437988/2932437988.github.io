@@ -3,21 +3,21 @@
     <id>https://x-17.top</id>
     <title>潇十七</title>
     <link href="https://x-17.top" />
-    <updated>2022-12-18T09:22:07.000Z</updated>
+    <updated>2022-12-19T10:31:38.000Z</updated>
     <category term="每日一题" />
-    <category term="Hard" />
+    <category term="Easy" />
     <category term="docker" />
+    <category term="Hard" />
     <category term="MIT 6.1810" />
     <category term="操作系统" />
-    <category term="Medium" />
-    <category term="Easy" />
     <category term="leetcode每日一题" />
+    <category term="Medium" />
     <category term="Madium" />
     <category term="easy" />
     <category term="leetcode周赛" />
     <category term="设计模式" />
-    <category term="C++" />
     <category term="工具" />
+    <category term="C++" />
     <category term="C++ Primer" />
     <category term="wiki" />
     <category term="教程" />
@@ -27,9 +27,26 @@
     <category term="笔试" />
     <category term="面试" />
     <entry>
-        <id>https://x-17.top/2022/12/18/1703-%E5%BE%97%E5%88%B0%E8%BF%9E%E7%BB%AD-K-%E4%B8%AA-1-%E7%9A%84%E6%9C%80%E5%B0%91%E7%9B%B8%E9%82%BB%E4%BA%A4%E6%8D%A2%E6%AC%A1%E6%95%B0/</id>
+        <id>https://x-17.top/2022/12/19/1971-%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84/</id>
+        <title>1971. 寻找图中是否存在路径</title>
+        <link rel="alternate" href="https://x-17.top/2022/12/19/1971-%E5%AF%BB%E6%89%BE%E5%9B%BE%E4%B8%AD%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E8%B7%AF%E5%BE%84/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1971-寻找图中是否存在路径&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1971-寻找图中是否存在路径&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/find-if-path-exists-in-graph/description/&#34;&gt;1971. 寻找图中是否存在路径&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;题解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#题解&#34;&gt;#&lt;/a&gt; 题解&lt;/h2&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; source, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; destination, vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt; &amp;amp;adj, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt;&amp;gt; &amp;amp;visited)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (source == destination) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        visited[source] = &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; next : adj[source]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!visited[next] &amp;amp;&amp;amp; &lt;span class=&#34;built_in&#34;&gt;dfs&lt;/span&gt;(next, destination, adj, visited)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;validPath&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n, vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt;&amp;amp; edges, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; source, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; destination)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class=&#34;built_in&#34;&gt;adj&lt;/span&gt;(n);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;auto&lt;/span&gt; &amp;amp;edge : edges) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; x = edge[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;], y = edge[&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            adj[x].&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(y);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            adj[y].&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(x);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;function&#34;&gt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;bool&lt;/span&gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;visited&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(n, &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;dfs&lt;/span&gt;(source, destination, adj, visited);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;复杂度分析&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;时间复杂度：$O (m+n)$&lt;/li&gt;
+&lt;li&gt;空间复杂度：$O (m+n)$&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="每日一题" />
+        <category term="Easy" />
+        <updated>2022-12-19T10:31:38.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://x-17.top/2022/12/18/LeetCode/1703-%E5%BE%97%E5%88%B0%E8%BF%9E%E7%BB%AD-K-%E4%B8%AA-1-%E7%9A%84%E6%9C%80%E5%B0%91%E7%9B%B8%E9%82%BB%E4%BA%A4%E6%8D%A2%E6%AC%A1%E6%95%B0/</id>
         <title>1703. 得到连续 K 个 1 的最少相邻交换次数</title>
-        <link rel="alternate" href="https://x-17.top/2022/12/18/1703-%E5%BE%97%E5%88%B0%E8%BF%9E%E7%BB%AD-K-%E4%B8%AA-1-%E7%9A%84%E6%9C%80%E5%B0%91%E7%9B%B8%E9%82%BB%E4%BA%A4%E6%8D%A2%E6%AC%A1%E6%95%B0/"/>
+        <link rel="alternate" href="https://x-17.top/2022/12/18/LeetCode/1703-%E5%BE%97%E5%88%B0%E8%BF%9E%E7%BB%AD-K-%E4%B8%AA-1-%E7%9A%84%E6%9C%80%E5%B0%91%E7%9B%B8%E9%82%BB%E4%BA%A4%E6%8D%A2%E6%AC%A1%E6%95%B0/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1703-得到连续-k-个-1-的最少相邻交换次数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1703-得到连续-k-个-1-的最少相邻交换次数&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/minimum-adjacent-swaps-for-k-consecutive-ones/description/&#34;&gt;1703. 得到连续 K 个 1 的最少相邻交换次数&lt;/a&gt;&lt;/h1&gt;
 &lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;minMoves&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; nums, &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; k)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; g;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;function&#34;&gt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;preSum&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; nums.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;(); i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (nums[i] == &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                g.&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(i - g.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                preSum.&lt;span class=&#34;built_in&#34;&gt;emplace_back&lt;/span&gt;(preSum.&lt;span class=&#34;built_in&#34;&gt;back&lt;/span&gt;() + g.&lt;span class=&#34;built_in&#34;&gt;back&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; m = g.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;(), res = INT_MAX;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt;= m - k; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; mid = i + k / &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            res = &lt;span class=&#34;built_in&#34;&gt;min&lt;/span&gt;(res, (&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; - k % &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;) * g[mid] +  \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                           (preSum[i + k] - preSum[mid + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;]) - \&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                           (preSum[mid] - preSum[i]));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; res;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;复杂度分析&lt;/p&gt;
@@ -3573,8 +3590,8 @@ $
 &lt;li&gt;空间复杂度：$$O (n)$$&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-08T07:32:59.000Z</updated>
     </entry>
     <entry>
@@ -4965,8 +4982,8 @@ url 为可以调的通的 API，例如：&lt;/p&gt;
 &lt;li&gt;空间复杂度：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math xmlns=&#34;http://www.w3.org/1998/Math/MathML&#34;&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;O&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo stretchy=&#34;false&#34;&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;O(n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34; style=&#34;margin-right:0.02778em;&#34;&gt;O&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathnormal&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-04T23:48:49.000Z</updated>
     </entry>
     <entry>
@@ -6187,8 +6204,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-10-01T23:42:54.000Z</updated>
     </entry>
     <entry>
@@ -6252,8 +6269,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (m+n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-29T23:41:21.000Z</updated>
     </entry>
     <entry>
@@ -6311,8 +6328,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (logk)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-27T23:37:35.000Z</updated>
     </entry>
     <entry>
@@ -6417,8 +6434,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-24T23:47:22.000Z</updated>
     </entry>
     <entry>
@@ -6486,8 +6503,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;题解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#题解&#34;&gt;#&lt;/a&gt; 题解&lt;/h2&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class MyLinkedList &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;private:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    struct ListNode&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int val;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode(int val):val(val), next(nullptr), prev(nullptr) &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    int _size;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ListNode* _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    ListNode* _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    MyLinkedList() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead = new ListNode(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail = new ListNode(0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next = _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev = _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size = 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    int get(int index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size - 1  index &amp;lt; 0)&amp;#123; return -1; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return cur-&amp;gt;val;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtHead(int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyHead-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = _dummyHead;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtTail(int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = _dummyTail-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = _dummyTail;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _dummyTail-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void addAtIndex(int index, int val) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size  index &amp;lt; 0)&amp;#123; return ; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        ListNode* p = new ListNode(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev-&amp;gt;next = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;prev = cur-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        p-&amp;gt;next = cur;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev = p;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    void deleteAtIndex(int index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        if(index &amp;gt; _size - 1  index &amp;lt; 0)&amp;#123; return ; &amp;#125; ListNode* cur = _dummyHead-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while(index--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            cur = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;prev-&amp;gt;next = cur-&amp;gt;next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        cur-&amp;gt;next-&amp;gt;prev = cur-&amp;gt;prev;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        delete(cur);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        _size--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * Your MyLinkedList object will be instantiated and called as such:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * MyLinkedList* obj = new MyLinkedList();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * int param_1 = obj-&amp;gt;get(index);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtHead(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtTail(val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;addAtIndex(index,val);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; * obj-&amp;gt;deleteAtIndex(index);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; */&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-23T00:17:08.000Z</updated>
     </entry>
     <entry>
@@ -6570,8 +6587,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (2^n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-20T00:20:31.000Z</updated>
     </entry>
     <entry>
@@ -6737,8 +6754,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-15T12:55:47.000Z</updated>
     </entry>
     <entry>
@@ -6806,8 +6823,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (logn)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-13T05:28:29.000Z</updated>
     </entry>
     <entry>
@@ -6892,8 +6909,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-10T10:58:44.000Z</updated>
     </entry>
     <entry>
@@ -6961,8 +6978,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-08T08:32:21.000Z</updated>
     </entry>
     <entry>
@@ -7182,8 +7199,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度 \(O (n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-09-02T11:08:40.000Z</updated>
     </entry>
     <entry>
@@ -7265,8 +7282,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度：\(O (n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-31T04:53:01.000Z</updated>
     </entry>
     <entry>
@@ -7297,8 +7314,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度：\(O (1)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-30T02:42:42.000Z</updated>
     </entry>
     <entry>
@@ -7441,8 +7458,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;li&gt;空间复杂度：\(O (n)\)&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-27T04:07:20.000Z</updated>
     </entry>
     <entry>
@@ -7512,8 +7529,8 @@ name: 相册中间显示的内容，建议用英文单引号包裹。&lt;/p&gt;&
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class Solution &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    vector findClosestElements(vector&amp;lt;int&amp;gt;&amp;amp; arr, int k, int x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sort(arr.begin(), arr.end(), [x](int a, int b) -&amp;gt; bool &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            return abs(a - x) &amp;lt; abs(b - x)  abs(a - x) == abs(b - x) &amp;amp;&amp;amp; a &amp;lt; b;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sort(arr.begin(), arr.begin() + k);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return vector(arr.begin(), arr.begin() + k);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;解法二：二分加双指针，依旧是简短的官方代码。&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;class Solution &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;public:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    vector findClosestElements(vector&amp;lt;int&amp;gt;&amp;amp; arr, int k, int x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int right = lower_bound(arr.begin(), arr.end(), x) - arr.begin();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        int left = right - 1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        while (k--) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            if (left &amp;lt; 0) &amp;#123; right++; &amp;#125; else if (right &amp;gt;= arr.size()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125; else if (x - arr[left] &amp;lt;= arr[right] - x) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                right++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        return vector(arr.begin() + left + 1, arr.begin() + right);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
-        <category term="Medium" />
         <category term="leetcode每日一题" />
+        <category term="Medium" />
         <updated>2022-08-25T03:36:02.000Z</updated>
     </entry>
     <entry>
