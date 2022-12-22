@@ -5,22 +5,22 @@
         <link>https://x-17.top</link>
         <description>可生活不是电影，我也少了点运气</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 18 Dec 2022 17:22:07 +0800</pubDate>
-        <lastBuildDate>Sun, 18 Dec 2022 17:22:07 +0800</lastBuildDate>
+        <pubDate>Thu, 22 Dec 2022 17:52:38 +0800</pubDate>
+        <lastBuildDate>Thu, 22 Dec 2022 17:52:38 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Medium</category>
+        <category>Hard</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
-        <category>Hard</category>
         <category>docker</category>
+        <category>Medium</category>
         <category>Easy</category>
         <category>leetcode每日一题</category>
         <category>Madium</category>
         <category>easy</category>
         <category>leetcode周赛</category>
+        <category>工具</category>
         <category>设计模式</category>
         <category>C++</category>
-        <category>工具</category>
         <category>C++ Primer</category>
         <category>wiki</category>
         <category>教程</category>
@@ -29,6 +29,15 @@
         <category>秋招</category>
         <category>笔试</category>
         <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/12/22/1799-N-%E6%AC%A1%E6%93%8D%E4%BD%9C%E5%90%8E%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%86%E6%95%B0%E5%92%8C/</guid>
+            <title>1799. N 次操作后的最大分数和</title>
+            <link>https://x-17.top/2022/12/22/1799-N-%E6%AC%A1%E6%93%8D%E4%BD%9C%E5%90%8E%E7%9A%84%E6%9C%80%E5%A4%A7%E5%88%86%E6%95%B0%E5%92%8C/</link>
+            <category>每日一题</category>
+            <category>Hard</category>
+            <pubDate>Thu, 22 Dec 2022 17:52:38 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1799-N-次操作后的最大分数和&#34;&gt;&lt;a href=&#34;#1799-N-次操作后的最大分数和&#34; class=&#34;headerlink&#34; title=&#34;1799. N 次操作后的最大分数和&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://leetcode.cn/problems/maximize-score-after-n-operations/description/&#34;&gt;1799. N 次操作后的最大分数和&lt;/a&gt;&lt;/h1&gt;&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;maxScore&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; nums)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; m = nums.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;function&#34;&gt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;dp&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;lt;&amp;lt; m, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        vector&amp;lt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;gt; &lt;span class=&#34;built_in&#34;&gt;gcd_tmp&lt;/span&gt;(m, &lt;span class=&#34;built_in&#34;&gt;vector&lt;/span&gt;&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;(m, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; m; ++i) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; m; ++j) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                gcd_tmp[i][j] = &lt;span class=&#34;built_in&#34;&gt;gcd&lt;/span&gt;(nums[i], nums[j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; all = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;lt;&amp;lt; m;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; s = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; s &amp;lt; all; ++s) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; t = __builtin_popcount(s);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (t &amp;amp; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;continue&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; m; ++i) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; ((s &amp;gt;&amp;gt; i) &amp;amp; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; m; ++j) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; ((s &amp;gt;&amp;gt; j) &amp;amp; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                            dp[s] = &lt;span class=&#34;built_in&#34;&gt;max&lt;/span&gt;(dp[s], dp[s ^ (&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;lt;&amp;lt; i) ^ (&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;lt;&amp;lt; j)] + t / &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; * gcd_tmp[i][j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; dp[all - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://x-17.top/2022/12/18/LeetCode/1703-%E5%BE%97%E5%88%B0%E8%BF%9E%E7%BB%AD-K-%E4%B8%AA-1-%E7%9A%84%E6%9C%80%E5%B0%91%E7%9B%B8%E9%82%BB%E4%BA%A4%E6%8D%A2%E6%AC%A1%E6%95%B0/</guid>
             <title>1703. 得到连续 K 个 1 的最少相邻交换次数</title>
