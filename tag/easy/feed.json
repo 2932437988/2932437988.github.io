@@ -5,6 +5,17 @@
     "home_page_url": "https://x-17.top",
     "items": [
         {
+            "id": "https://x-17.top/2022/12/27/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/",
+            "url": "https://x-17.top/2022/12/27/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/",
+            "title": "2027. 转换字符串的最少操作次数",
+            "date_published": "2022-12-27T09:20:00.000Z",
+            "content_html": "<link rel=\"stylesheet\" class=\"aplayer-secondary-style-marker\" href=\"\\assets\\css\\APlayer.min.css\"><script src=\"\\assets\\js\\APlayer.min.js\" class=\"aplayer-secondary-script-marker\"></script><script class=\"meting-secondary-script-marker\" src=\"\\assets\\js\\Meting.min.js\"></script><figure class=\"highlight c++\"><table><tr><td class=\"code\"><pre><span class=\"line\"><span class=\"keyword\">class</span> <span class=\"title class_\">Solution</span> &#123;</span><br><span class=\"line\"><span class=\"keyword\">public</span>:</span><br><span class=\"line\">    <span class=\"function\"><span class=\"type\">int</span> <span class=\"title\">minimumMoves</span><span class=\"params\">(string s)</span> </span>&#123;</span><br><span class=\"line\">        <span class=\"type\">int</span> ans = <span class=\"number\">0</span>;</span><br><span class=\"line\">        <span class=\"type\">int</span> flag = <span class=\"number\">0</span>;</span><br><span class=\"line\">        <span class=\"type\">int</span> num = <span class=\"number\">0</span>;</span><br><span class=\"line\">        <span class=\"keyword\">for</span> (<span class=\"type\">int</span> i = <span class=\"number\">0</span>; i &lt; s.<span class=\"built_in\">length</span>(); i++) &#123;</span><br><span class=\"line\">            <span class=\"keyword\">if</span> (s[i] == <span class=\"string\">&#x27;X&#x27;</span>) &#123;</span><br><span class=\"line\">                flag++;</span><br><span class=\"line\">                num++;</span><br><span class=\"line\">            &#125; <span class=\"keyword\">else</span> &#123;</span><br><span class=\"line\">                <span class=\"keyword\">if</span> (flag != <span class=\"number\">0</span>) num++;</span><br><span class=\"line\">            &#125;</span><br><span class=\"line\">            <span class=\"keyword\">if</span> (num == <span class=\"number\">3</span>) &#123;</span><br><span class=\"line\">                num = <span class=\"number\">0</span>;</span><br><span class=\"line\">                flag = <span class=\"number\">0</span>;</span><br><span class=\"line\">                ans++;</span><br><span class=\"line\">            &#125;</span><br><span class=\"line\">        &#125;</span><br><span class=\"line\">        <span class=\"keyword\">if</span> (num != <span class=\"number\">0</span>) ans++;</span><br><span class=\"line\">        <span class=\"keyword\">return</span> ans;</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">&#125;;</span><br></pre></td></tr></table></figure>",
+            "tags": [
+                "每日一题",
+                "Easy"
+            ]
+        },
+        {
             "id": "https://x-17.top/2022/12/23/LeetCode/2011-%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C%E5%90%8E%E7%9A%84%E5%8F%98%E9%87%8F%E5%80%BC/",
             "url": "https://x-17.top/2022/12/23/LeetCode/2011-%E6%89%A7%E8%A1%8C%E6%93%8D%E4%BD%9C%E5%90%8E%E7%9A%84%E5%8F%98%E9%87%8F%E5%80%BC/",
             "title": "2011. 执行操作后的变量值",
