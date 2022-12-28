@@ -5,15 +5,15 @@
         <link>https://x-17.top</link>
         <description>可生活不是电影，我也少了点运气</description>
         <language>zh-CN</language>
-        <pubDate>Mon, 26 Dec 2022 16:59:06 +0800</pubDate>
-        <lastBuildDate>Mon, 26 Dec 2022 16:59:06 +0800</lastBuildDate>
+        <pubDate>Wed, 28 Dec 2022 17:12:46 +0800</pubDate>
+        <lastBuildDate>Wed, 28 Dec 2022 17:12:46 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Easy</category>
+        <category>Medium</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
         <category>docker</category>
         <category>Hard</category>
-        <category>Medium</category>
+        <category>Easy</category>
         <category>leetcode每日一题</category>
         <category>Madium</category>
         <category>easy</category>
@@ -26,9 +26,19 @@
         <category>Hexo</category>
         <category>Butterfly</category>
         <category>wiki</category>
-        <category>秋招</category>
         <category>笔试</category>
+        <category>秋招</category>
         <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/12/28/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/</guid>
+            <title>1750. 删除字符串两端相同字符后的最短长度</title>
+            <link>https://x-17.top/2022/12/28/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/</link>
+            <category>每日一题</category>
+            <category>Medium</category>
+            <pubDate>Wed, 28 Dec 2022 17:12:46 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1750-删除字符串两端相同字符后的最短长度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1750-删除字符串两端相同字符后的最短长度&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/description/&#34;&gt;1750. 删除字符串两端相同字符后的最短长度&lt;/a&gt;&lt;/h1&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;minimumLength&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(string s)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n = s.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; left = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, right = n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt; right &amp;amp;&amp;amp; s[left] == s[right]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;char&lt;/span&gt; c = s[left];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt;= right &amp;amp;&amp;amp; s[left] == c) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt;= right &amp;amp;&amp;amp; s[right] == c) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                right--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; right - left + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://x-17.top/2022/12/26/LeetCode/1759-%E7%BB%9F%E8%AE%A1%E5%90%8C%E6%9E%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%95%B0%E7%9B%AE/</guid>
             <title>1759. 统计同构子字符串的数目</title>

@@ -8,12 +8,12 @@
         <pubDate>Tue, 27 Dec 2022 17:20:00 +0800</pubDate>
         <lastBuildDate>Tue, 27 Dec 2022 17:20:00 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Easy</category>
+        <category>Medium</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
         <category>docker</category>
         <category>Hard</category>
-        <category>Medium</category>
+        <category>Easy</category>
         <category>leetcode每日一题</category>
         <category>Madium</category>
         <category>easy</category>
@@ -26,13 +26,13 @@
         <category>Hexo</category>
         <category>Butterfly</category>
         <category>wiki</category>
-        <category>秋招</category>
         <category>笔试</category>
+        <category>秋招</category>
         <category>面试</category>
         <item>
-            <guid isPermalink="true">https://x-17.top/2022/12/27/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/</guid>
+            <guid isPermalink="true">https://x-17.top/2022/12/27/LeetCode/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/</guid>
             <title>2027. 转换字符串的最少操作次数</title>
-            <link>https://x-17.top/2022/12/27/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/</link>
+            <link>https://x-17.top/2022/12/27/LeetCode/2027-%E8%BD%AC%E6%8D%A2%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%9C%80%E5%B0%91%E6%93%8D%E4%BD%9C%E6%AC%A1%E6%95%B0/</link>
             <category>每日一题</category>
             <category>Easy</category>
             <pubDate>Tue, 27 Dec 2022 17:20:00 +0800</pubDate>
