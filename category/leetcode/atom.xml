@@ -3,33 +3,43 @@
     <id>https://x-17.top</id>
     <title>潇十七 • Posts by &#34;leetcode&#34; category</title>
     <link href="https://x-17.top" />
-    <updated>2022-12-28T09:12:46.000Z</updated>
-    <category term="每日一题" />
-    <category term="Medium" />
+    <updated>2022-12-29T09:38:29.000Z</updated>
     <category term="MIT 6.1810" />
     <category term="操作系统" />
     <category term="docker" />
-    <category term="Hard" />
+    <category term="每日一题" />
     <category term="Easy" />
+    <category term="Hard" />
+    <category term="工具" />
     <category term="leetcode每日一题" />
+    <category term="Medium" />
     <category term="Madium" />
     <category term="easy" />
     <category term="leetcode周赛" />
     <category term="设计模式" />
     <category term="C++" />
-    <category term="工具" />
-    <category term="C++ Primer" />
+    <category term="秋招" />
+    <category term="笔试" />
+    <category term="面试" />
+    <category term="wiki" />
     <category term="教程" />
     <category term="Hexo" />
     <category term="Butterfly" />
-    <category term="wiki" />
-    <category term="笔试" />
-    <category term="秋招" />
-    <category term="面试" />
+    <category term="C++ Primer" />
     <entry>
-        <id>https://x-17.top/2022/12/28/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/</id>
+        <id>https://x-17.top/2022/12/29/2032-%E8%87%B3%E5%B0%91%E5%9C%A8%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%80%BC/</id>
+        <title>2032. 至少在两个数组中出现的值</title>
+        <link rel="alternate" href="https://x-17.top/2022/12/29/2032-%E8%87%B3%E5%B0%91%E5%9C%A8%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%80%BC/"/>
+        <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;2032-至少在两个数组中出现的值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2032-至少在两个数组中出现的值&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/two-out-of-three/&#34;&gt;2032. 至少在两个数组中出现的值&lt;/a&gt;&lt;/h1&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; &lt;span class=&#34;title&#34;&gt;twoOutOfThree&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; nums1, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; nums2, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; nums3)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        map&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;,&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; m;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        set&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;auto&lt;/span&gt; num : nums1) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            m[num] = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;auto&lt;/span&gt; num : nums2) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (m.&lt;span class=&#34;built_in&#34;&gt;count&lt;/span&gt;(num) &amp;amp;&amp;amp; m[num] == &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) n.&lt;span class=&#34;built_in&#34;&gt;insert&lt;/span&gt;(num);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; m[num] = &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;auto&lt;/span&gt; num : nums3) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (m.&lt;span class=&#34;built_in&#34;&gt;count&lt;/span&gt;(num)) n.&lt;span class=&#34;built_in&#34;&gt;insert&lt;/span&gt;(num);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt; &amp;#123;n.&lt;span class=&#34;built_in&#34;&gt;begin&lt;/span&gt;(), n.&lt;span class=&#34;built_in&#34;&gt;end&lt;/span&gt;()&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="每日一题" />
+        <category term="Easy" />
+        <updated>2022-12-29T09:38:29.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://x-17.top/2022/12/28/LeetCode/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/</id>
         <title>1750. 删除字符串两端相同字符后的最短长度</title>
-        <link rel="alternate" href="https://x-17.top/2022/12/28/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/"/>
+        <link rel="alternate" href="https://x-17.top/2022/12/28/LeetCode/1750-%E5%88%A0%E9%99%A4%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B8%A4%E7%AB%AF%E7%9B%B8%E5%90%8C%E5%AD%97%E7%AC%A6%E5%90%8E%E7%9A%84%E6%9C%80%E7%9F%AD%E9%95%BF%E5%BA%A6/"/>
         <content type="html">&lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;1750-删除字符串两端相同字符后的最短长度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1750-删除字符串两端相同字符后的最短长度&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/minimum-length-of-string-after-deleting-similar-ends/description/&#34;&gt;1750. 删除字符串两端相同字符后的最短长度&lt;/a&gt;&lt;/h1&gt;
 &lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;minimumLength&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(string s)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; n = s.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; left = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, right = n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt; right &amp;amp;&amp;amp; s[left] == s[right]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;type&#34;&gt;char&lt;/span&gt; c = s[left];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt;= right &amp;amp;&amp;amp; s[left] == c) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                left++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (left &amp;lt;= right &amp;amp;&amp;amp; s[right] == c) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                right--;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; right - left + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
         <category term="每日一题" />
