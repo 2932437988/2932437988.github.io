@@ -5,23 +5,23 @@
         <link>https://x-17.top</link>
         <description>可生活不是电影，我也少了点运气</description>
         <language>zh-CN</language>
-        <pubDate>Fri, 30 Dec 2022 16:11:43 +0800</pubDate>
-        <lastBuildDate>Fri, 30 Dec 2022 16:11:43 +0800</lastBuildDate>
+        <pubDate>Sat, 31 Dec 2022 17:04:34 +0800</pubDate>
+        <lastBuildDate>Sat, 31 Dec 2022 17:04:34 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Medium</category>
-        <category>docker</category>
+        <category>Easy</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
+        <category>docker</category>
         <category>Hard</category>
-        <category>Easy</category>
+        <category>Medium</category>
         <category>leetcode每日一题</category>
         <category>Madium</category>
         <category>easy</category>
         <category>leetcode周赛</category>
-        <category>设计模式</category>
-        <category>C++</category>
         <category>工具</category>
         <category>C++ Primer</category>
+        <category>C++</category>
+        <category>设计模式</category>
         <category>教程</category>
         <category>Hexo</category>
         <category>Butterfly</category>
@@ -30,9 +30,19 @@
         <category>笔试</category>
         <category>面试</category>
         <item>
-            <guid isPermalink="true">https://x-17.top/2022/12/30/855-%E8%80%83%E5%9C%BA%E5%B0%B1%E5%BA%A7/</guid>
+            <guid isPermalink="true">https://x-17.top/2022/12/31/2037-%E4%BD%BF%E6%AF%8F%E4%BD%8D%E5%AD%A6%E7%94%9F%E9%83%BD%E6%9C%89%E5%BA%A7%E4%BD%8D%E7%9A%84%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0/</guid>
+            <title>2037. 使每位学生都有座位的最少移动次数</title>
+            <link>https://x-17.top/2022/12/31/2037-%E4%BD%BF%E6%AF%8F%E4%BD%8D%E5%AD%A6%E7%94%9F%E9%83%BD%E6%9C%89%E5%BA%A7%E4%BD%8D%E7%9A%84%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0/</link>
+            <category>每日一题</category>
+            <category>Easy</category>
+            <pubDate>Sat, 31 Dec 2022 17:04:34 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;2037-使每位学生都有座位的最少移动次数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2037-使每位学生都有座位的最少移动次数&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/&#34;&gt;2037. 使每位学生都有座位的最少移动次数&lt;/a&gt;&lt;/h1&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;minMovesToSeat&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; seats, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; students)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;sort&lt;/span&gt;(seats.&lt;span class=&#34;built_in&#34;&gt;begin&lt;/span&gt;(), seats.&lt;span class=&#34;built_in&#34;&gt;end&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;sort&lt;/span&gt;(students.&lt;span class=&#34;built_in&#34;&gt;begin&lt;/span&gt;(), students.&lt;span class=&#34;built_in&#34;&gt;end&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; ans = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; seats.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;(); i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ans += &lt;span class=&#34;built_in&#34;&gt;abs&lt;/span&gt;(seats[i] - students[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/12/30/LeetCode/855-%E8%80%83%E5%9C%BA%E5%B0%B1%E5%BA%A7/</guid>
             <title>855. 考场就座</title>
-            <link>https://x-17.top/2022/12/30/855-%E8%80%83%E5%9C%BA%E5%B0%B1%E5%BA%A7/</link>
+            <link>https://x-17.top/2022/12/30/LeetCode/855-%E8%80%83%E5%9C%BA%E5%B0%B1%E5%BA%A7/</link>
             <category>每日一题</category>
             <category>Medium</category>
             <pubDate>Fri, 30 Dec 2022 16:11:43 +0800</pubDate>
@@ -2163,8 +2173,8 @@ left 的长度要尽可能小。&lt;br&gt;
             <guid isPermalink="true">https://x-17.top/2022/10/15/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%89)/</guid>
             <title>C++学习笔记(三)</title>
             <link>https://x-17.top/2022/10/15/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%89)/</link>
-            <category>C++</category>
             <category>C++ Primer</category>
+            <category>C++</category>
             <pubDate>Sat, 15 Oct 2022 14:01:59 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;接下来是本书第二章的剩余内容&lt;/p&gt;
@@ -2398,8 +2408,8 @@ C++ 程序还会用到的一项预处理功能是头文件保护符（header gua
             <guid isPermalink="true">https://x-17.top/2022/10/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%BA%8C)/</guid>
             <title>C++学习笔记(二)</title>
             <link>https://x-17.top/2022/10/14/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%BA%8C)/</link>
-            <category>C++</category>
             <category>C++ Primer</category>
+            <category>C++</category>
             <pubDate>Fri, 14 Oct 2022 08:55:33 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;今天是第二章的内容，祝你好运，也祝我。&lt;/p&gt;
@@ -3034,8 +3044,8 @@ void * 指针是一种特殊的指针类型，可用于存放任意对象的地�
             <guid isPermalink="true">https://x-17.top/2022/10/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/</guid>
             <title>C++学习笔记(一)</title>
             <link>https://x-17.top/2022/10/13/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/C++%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%B8%80)/</link>
-            <category>C++</category>
             <category>C++ Primer</category>
+            <category>C++</category>
             <pubDate>Thu, 13 Oct 2022 15:53:32 +0800</pubDate>
             <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;blockquote&gt;
 &lt;p&gt;本系列呢，目前是我个人学习 C++ Primer 这本书的学习纪录，整本书 19 章，顺利的话这个系列大概会持续 1 个月左右，尽量每天一章那个样子吧，可能记的没什么逻辑格式等等等等，毕竟，只是个笔记，太注重格式感觉本末倒置了，尽量持续更新吧，希望不鸽。&lt;/p&gt;

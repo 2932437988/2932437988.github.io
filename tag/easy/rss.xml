@@ -5,23 +5,23 @@
         <link>https://x-17.top</link>
         <description>可生活不是电影，我也少了点运气</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 29 Dec 2022 17:38:29 +0800</pubDate>
-        <lastBuildDate>Thu, 29 Dec 2022 17:38:29 +0800</lastBuildDate>
+        <pubDate>Sat, 31 Dec 2022 17:04:34 +0800</pubDate>
+        <lastBuildDate>Sat, 31 Dec 2022 17:04:34 +0800</lastBuildDate>
         <category>每日一题</category>
-        <category>Medium</category>
-        <category>docker</category>
+        <category>Easy</category>
         <category>MIT 6.1810</category>
         <category>操作系统</category>
+        <category>docker</category>
         <category>Hard</category>
-        <category>Easy</category>
+        <category>Medium</category>
         <category>leetcode每日一题</category>
         <category>Madium</category>
         <category>easy</category>
         <category>leetcode周赛</category>
-        <category>设计模式</category>
-        <category>C++</category>
         <category>工具</category>
         <category>C++ Primer</category>
+        <category>C++</category>
+        <category>设计模式</category>
         <category>教程</category>
         <category>Hexo</category>
         <category>Butterfly</category>
@@ -29,6 +29,16 @@
         <category>秋招</category>
         <category>笔试</category>
         <category>面试</category>
+        <item>
+            <guid isPermalink="true">https://x-17.top/2022/12/31/2037-%E4%BD%BF%E6%AF%8F%E4%BD%8D%E5%AD%A6%E7%94%9F%E9%83%BD%E6%9C%89%E5%BA%A7%E4%BD%8D%E7%9A%84%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0/</guid>
+            <title>2037. 使每位学生都有座位的最少移动次数</title>
+            <link>https://x-17.top/2022/12/31/2037-%E4%BD%BF%E6%AF%8F%E4%BD%8D%E5%AD%A6%E7%94%9F%E9%83%BD%E6%9C%89%E5%BA%A7%E4%BD%8D%E7%9A%84%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0/</link>
+            <category>每日一题</category>
+            <category>Easy</category>
+            <pubDate>Sat, 31 Dec 2022 17:04:34 +0800</pubDate>
+            <description><![CDATA[ &lt;link rel=&#34;stylesheet&#34; class=&#34;aplayer-secondary-style-marker&#34; href=&#34;\assets\css\APlayer.min.css&#34;&gt;&lt;script src=&#34;\assets\js\APlayer.min.js&#34; class=&#34;aplayer-secondary-script-marker&#34;&gt;&lt;/script&gt;&lt;script class=&#34;meting-secondary-script-marker&#34; src=&#34;\assets\js\Meting.min.js&#34;&gt;&lt;/script&gt;&lt;h1 id=&#34;2037-使每位学生都有座位的最少移动次数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2037-使每位学生都有座位的最少移动次数&#34;&gt;#&lt;/a&gt; &lt;a href=&#34;https://leetcode.cn/problems/minimum-number-of-moves-to-seat-everyone/&#34;&gt;2037. 使每位学生都有座位的最少移动次数&lt;/a&gt;&lt;/h1&gt;
+&lt;figure class=&#34;highlight c++&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title class_&#34;&gt;Solution&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt;:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;minMovesToSeat&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; seats, vector&amp;lt;&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt;&amp;gt;&amp;amp; students)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;sort&lt;/span&gt;(seats.&lt;span class=&#34;built_in&#34;&gt;begin&lt;/span&gt;(), seats.&lt;span class=&#34;built_in&#34;&gt;end&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;sort&lt;/span&gt;(students.&lt;span class=&#34;built_in&#34;&gt;begin&lt;/span&gt;(), students.&lt;span class=&#34;built_in&#34;&gt;end&lt;/span&gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; ans = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;type&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; seats.&lt;span class=&#34;built_in&#34;&gt;size&lt;/span&gt;(); i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            ans += &lt;span class=&#34;built_in&#34;&gt;abs&lt;/span&gt;(seats[i] - students[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; ans;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://x-17.top/2022/12/29/LeetCode/2032-%E8%87%B3%E5%B0%91%E5%9C%A8%E4%B8%A4%E4%B8%AA%E6%95%B0%E7%BB%84%E4%B8%AD%E5%87%BA%E7%8E%B0%E7%9A%84%E5%80%BC/</guid>
             <title>2032. 至少在两个数组中出现的值</title>
